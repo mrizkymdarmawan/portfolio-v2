@@ -17,6 +17,11 @@ export const metadata: Metadata = {
   title: "Kiky | Software Engineer",
   description:
     "Kiky's portfolio: software engineer with 5+ years of experience across web, mobile, DevOps, and IoT.",
+  icons: {
+    icon: "/icon.png",
+    shortcut: "/icon.png",
+    apple: "/icon.png",
+  },
 };
 
 export default function RootLayout({
