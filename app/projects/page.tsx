@@ -22,8 +22,8 @@ export default function ProjectsPage() {
           </p>
           <h1 className="text-4xl font-bold tracking-tight">All Projects</h1>
           <p className="max-w-2xl text-zinc-700 dark:text-zinc-300">
-            This page is fully data-driven. Add a new object in `lib/projects.ts` and it will
-            appear here automatically.
+            A curated collection of projects that reflect my experience in software engineering
+            across different domains and technologies.
           </p>
         </section>
 
