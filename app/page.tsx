@@ -45,8 +45,8 @@ export default function Home() {
             Welcome
           </p>
           <h1 className="max-w-3xl text-4xl font-bold tracking-tight sm:text-5xl">
-            Hi, I am Kiky. I build reliable software products across web, mobile,
-            DevOps, and IoT.
+            Hi, I am Kiky. I build reliable software products across web,
+            mobile, DevOps, and IoT.
           </h1>
           <p className="max-w-2xl text-lg leading-8 text-zinc-700 dark:text-zinc-300">
             I have 5+ years of software engineering experience since 2020,
@@ -153,7 +153,7 @@ export default function Home() {
 
       <footer className="border-t border-zinc-200 py-8 dark:border-zinc-800">
         <div className="mx-auto flex w-full max-w-5xl flex-col gap-1 px-6 text-sm text-zinc-600 dark:text-zinc-400 sm:flex-row sm:items-center sm:justify-between">
-          <p>{`© ${currentYear} Kiky (Muhammad Rizky Maulana Darmawan)`}</p>
+          <p>{`© ${currentYear}`}</p>
           <a
             href="https://mrizkymdarmawan.com"
             target="_blank"
