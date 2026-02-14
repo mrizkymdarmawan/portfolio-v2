@@ -7,7 +7,7 @@ export default function ProjectsPage() {
       <header className="border-b border-zinc-200 bg-white dark:border-zinc-800 dark:bg-zinc-950">
         <div className="mx-auto flex w-full max-w-5xl items-center justify-between px-6 py-4">
           <Link href="/" className="text-sm font-semibold tracking-wide">
-            Software Engineer Portfolio
+            Kiky | Software Engineer
           </Link>
           <Link href="/" className="text-sm text-zinc-700 hover:text-zinc-900 dark:text-zinc-300 dark:hover:text-zinc-100">
             Back to home

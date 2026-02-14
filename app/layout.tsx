@@ -14,8 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Software Engineer Portfolio",
-  description: "A simple portfolio website built with Next.js and Tailwind CSS.",
+  title: "Kiky | Software Engineer",
+  description:
+    "Kiky's portfolio: software engineer with 5+ years of experience across web, mobile, DevOps, and IoT.",
 };
 
 export default function RootLayout({
