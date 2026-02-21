@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import ProjectPreviewSlider from "@/components/project-preview-slider";
 import { getProjectBySlug, projects } from "@/lib/projects";
 
 type ProjectDetailPageProps = {
@@ -13,7 +14,9 @@ export async function generateStaticParams() {
   }));
 }
 
-export async function generateMetadata({ params }: ProjectDetailPageProps): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: ProjectDetailPageProps): Promise<Metadata> {
   const { slug } = await params;
   const project = getProjectBySlug(slug);
 
@@ -29,7 +32,9 @@ export async function generateMetadata({ params }: ProjectDetailPageProps): Prom
   };
 }
 
-export default async function ProjectDetailPage({ params }: ProjectDetailPageProps) {
+export default async function ProjectDetailPage({
+  params,
+}: ProjectDetailPageProps) {
   const { slug } = await params;
   const project = getProjectBySlug(slug);
 
@@ -41,10 +46,16 @@ export default async function ProjectDetailPage({ params }: ProjectDetailPagePro
     <div className="min-h-screen bg-zinc-50 text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100">
       <header className="border-b border-zinc-200 bg-white dark:border-zinc-800 dark:bg-zinc-950">
         <div className="mx-auto flex w-full max-w-3xl items-center justify-between px-6 py-4">
-          <Link href="/projects" className="text-sm text-zinc-700 hover:text-zinc-900 dark:text-zinc-300 dark:hover:text-zinc-100">
+          <Link
+            href="/projects"
+            className="text-sm text-zinc-700 hover:text-zinc-900 dark:text-zinc-300 dark:hover:text-zinc-100"
+          >
             Back to archive
           </Link>
-          <Link href="/" className="text-sm text-zinc-700 hover:text-zinc-900 dark:text-zinc-300 dark:hover:text-zinc-100">
+          <Link
+            href="/"
+            className="text-sm text-zinc-700 hover:text-zinc-900 dark:text-zinc-300 dark:hover:text-zinc-100"
+          >
             Home
           </Link>
         </div>
@@ -56,15 +67,23 @@ export default async function ProjectDetailPage({ params }: ProjectDetailPagePro
             Project Detail
           </p>
           <h1 className="text-4xl font-bold tracking-tight">{project.title}</h1>
-          <p className="text-zinc-700 dark:text-zinc-300">{project.description}</p>
+          <p className="text-zinc-700 dark:text-zinc-300">
+            {project.description}
+          </p>
         </section>
+
+        <ProjectPreviewSlider title={project.title} images={project.previewImages} />
 
         <section className="rounded-xl border border-zinc-200 bg-white p-5 dark:border-zinc-800 dark:bg-zinc-900">
           <h2 className="text-sm font-semibold uppercase tracking-wide text-zinc-600 dark:text-zinc-400">
             Tech Stack
           </h2>
-          <p className="mt-2 text-zinc-800 dark:text-zinc-200">{project.tech.join(" · ")}</p>
-          <p className="mt-4 text-sm text-zinc-600 dark:text-zinc-400">Year: {project.year}</p>
+          <p className="mt-2 text-zinc-800 dark:text-zinc-200">
+            {project.tech.join(" · ")}
+          </p>
+          <p className="mt-4 text-sm text-zinc-600 dark:text-zinc-400">
+            Year: {project.year}
+          </p>
         </section>
 
         <section className="flex flex-wrap gap-3">

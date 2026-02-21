@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { GitHubIcon, MailIcon } from "@/components/icons";
+import { experiences } from "@/lib/experience";
 import { projects } from "@/lib/projects";
 
 export default function Home() {
@@ -22,6 +23,12 @@ export default function Home() {
               className="hover:text-zinc-600 dark:hover:text-zinc-300"
             >
               About
+            </a>
+            <a
+              href="#experience"
+              className="hover:text-zinc-600 dark:hover:text-zinc-300"
+            >
+              Experience
             </a>
             <a
               href="#work"
@@ -82,6 +89,65 @@ export default function Home() {
             front-end, back-end, infrastructure, and IoT integrations. I care
             about pragmatic architecture, readable code, and reliable delivery.
           </p>
+        </section>
+
+        <section id="experience" className="space-y-6">
+          <div className="flex items-end justify-between gap-4">
+            <h2 className="text-2xl font-semibold tracking-tight">
+              Work Experience
+            </h2>
+            <a
+              href="/resume.pdf"
+              target="_blank"
+              rel="noreferrer"
+              className="text-sm font-medium text-zinc-700 hover:text-zinc-900 dark:text-zinc-300 dark:hover:text-zinc-100"
+            >
+              View full resume
+            </a>
+          </div>
+          <div className="space-y-4">
+            {experiences.map((item) => {
+              const cardContent = (
+                <>
+                  <div className="flex flex-wrap items-start justify-between gap-3">
+                    <div>
+                      <h3 className="text-lg font-semibold">{item.role}</h3>
+                      <p className="text-sm text-zinc-600 dark:text-zinc-400">
+                        {item.company} · {item.location}
+                      </p>
+                    </div>
+                    <p className="text-sm font-medium text-zinc-600 dark:text-zinc-400">
+                      {item.period}
+                    </p>
+                  </div>
+                  {/* <p className="mt-3 text-sm leading-7 text-zinc-700 dark:text-zinc-300">{item.summary}</p> */}
+                </>
+              );
+
+              if (item.companyUrl) {
+                return (
+                  <a
+                    key={`${item.company}-${item.period}`}
+                    href={item.companyUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="block rounded-xl border border-zinc-200 bg-white p-5 transition hover:bg-zinc-100 dark:border-zinc-800 dark:bg-zinc-900 dark:hover:bg-zinc-800"
+                  >
+                    {cardContent}
+                  </a>
+                );
+              }
+
+              return (
+                <article
+                  key={`${item.company}-${item.period}`}
+                  className="rounded-xl border border-zinc-200 bg-white p-5 dark:border-zinc-800 dark:bg-zinc-900"
+                >
+                  {cardContent}
+                </article>
+              );
+            })}
+          </div>
         </section>
 
         <section id="work" className="space-y-6">
