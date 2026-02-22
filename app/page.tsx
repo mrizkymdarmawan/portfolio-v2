@@ -1,5 +1,10 @@
 import Link from "next/link";
-import { GitHubIcon, MailIcon } from "@/components/icons";
+import {
+  ArrowRightIcon,
+  ExternalLinkIcon,
+  GitHubIcon,
+  MailIcon,
+} from "@/components/icons";
 import { experiences } from "@/lib/experience";
 import { projects } from "@/lib/projects";
 
@@ -70,6 +75,7 @@ export default function Home() {
             >
               <GitHubIcon className="size-4" />
               GitHub
+              <ExternalLinkIcon className="size-3.5" />
             </a>
             <a
               href="mailto:mrizkymdarmawan@gmail.com"
@@ -100,9 +106,10 @@ export default function Home() {
               href="/resume.pdf"
               target="_blank"
               rel="noreferrer"
-              className="text-sm font-medium text-zinc-700 hover:text-zinc-900 dark:text-zinc-300 dark:hover:text-zinc-100"
+              className="inline-flex items-center gap-1 text-sm font-medium text-zinc-700 hover:text-zinc-900 dark:text-zinc-300 dark:hover:text-zinc-100"
             >
               View full resume
+              <ExternalLinkIcon className="size-3.5" />
             </a>
           </div>
           <div className="space-y-4">
@@ -114,6 +121,9 @@ export default function Home() {
                       <h3 className="text-lg font-semibold">{item.role}</h3>
                       <p className="text-sm text-zinc-600 dark:text-zinc-400">
                         {item.company} · {item.location}
+                        {item.companyUrl ? (
+                          <ExternalLinkIcon className="ml-1 inline size-3 align-[-1px]" />
+                        ) : null}
                       </p>
                     </div>
                     <p className="text-sm font-medium text-zinc-600 dark:text-zinc-400">
@@ -157,9 +167,10 @@ export default function Home() {
             </h2>
             <Link
               href="/projects"
-              className="text-sm font-medium text-zinc-700 hover:text-zinc-900 dark:text-zinc-300 dark:hover:text-zinc-100"
+              className="inline-flex items-center gap-1 text-sm font-medium text-zinc-700 hover:text-zinc-900 dark:text-zinc-300 dark:hover:text-zinc-100"
             >
               View project archive
+              <ArrowRightIcon className="size-3.5" />
             </Link>
           </div>
           <div className="grid gap-4 md:grid-cols-3">
@@ -212,6 +223,7 @@ export default function Home() {
             >
               <GitHubIcon className="size-4" />
               github.com/mrizkymdarmawan
+              <ExternalLinkIcon className="size-3.5" />
             </a>
           </div>
         </section>
@@ -224,9 +236,10 @@ export default function Home() {
             href="https://mrizkymdarmawan.com"
             target="_blank"
             rel="noreferrer"
-            className="hover:text-zinc-800 dark:hover:text-zinc-200"
+            className="inline-flex items-center gap-1 hover:text-zinc-800 dark:hover:text-zinc-200"
           >
             mrizkymdarmawan.com
+            <ExternalLinkIcon className="size-3.5" />
           </a>
         </div>
       </footer>

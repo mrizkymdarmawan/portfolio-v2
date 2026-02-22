@@ -24,6 +24,10 @@ export const projects: Project[] = [
         src: "/project-previews/famous.png",
         alt: "Famous preview",
       },
+      {
+        src: "/project-previews/famous-2.png",
+        alt: "Famous preview 2",
+      },
     ],
     repoUrl: "https://github.com/Minergo-System",
     liveUrl: "https://famous.borneo-indobara.com/sign-in",
@@ -40,6 +44,14 @@ export const projects: Project[] = [
       {
         src: "/project-previews/uassist.png",
         alt: "UAssist onboard unit preview",
+      },
+      {
+        src: "/project-previews/onboard-2.jpg",
+        alt: "UAssist onboard unit preview 2",
+      },
+      {
+        src: "/project-previews/onboard-3.jpg",
+        alt: "UAssist onboard unit preview 3",
       },
     ],
     repoUrl: "https://github.com/Minergo-System",
@@ -58,6 +70,14 @@ export const projects: Project[] = [
         src: "/project-previews/uassist.png",
         alt: "UAssist mobile app preview",
       },
+      {
+        src: "/project-previews/uassist-2.jpg",
+        alt: "UAssist mobile app preview 2",
+      },
+      {
+        src: "/project-previews/uassist-3.jpg",
+        alt: "UAssist mobile app preview 3",
+      },
     ],
     repoUrl: "https://github.com/Minergo-System",
     liveUrl: "https://famous.borneo-indobara.com/sign-in",
@@ -74,6 +94,18 @@ export const projects: Project[] = [
       {
         src: "/project-previews/eoffice.png",
         alt: "E-Office BKAD Bogor preview",
+      },
+      {
+        src: "/project-previews/eoffice-2.png",
+        alt: "E-Office BKAD Bogor preview 2",
+      },
+      {
+        src: "/project-previews/eoffice-3.png",
+        alt: "E-Office BKAD Bogor preview 3",
+      },
+      {
+        src: "/project-previews/eoffice-4.png",
+        alt: "E-Office BKAD Bogor preview 4",
       },
     ],
     repoUrl: "https://github.com/mrizkymdarmawan/e-office-bkad",

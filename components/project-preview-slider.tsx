@@ -60,12 +60,12 @@ export default function ProjectPreviewSlider({
         </span>
       </div>
 
-      <div className="relative mt-3 h-[280px] overflow-hidden rounded-lg border border-zinc-200 dark:border-zinc-700 sm:h-[360px]">
+      <div className="relative mt-3 h-[260px] rounded-lg border border-zinc-200 bg-zinc-100 dark:border-zinc-700 dark:bg-zinc-950 sm:h-[360px] lg:h-[420px]">
         <Image
           src={currentImage.src}
           alt={currentImage.alt || `${title} preview`}
           fill
-          className="object-cover"
+          className="object-contain p-2"
           sizes="(max-width: 640px) 100vw, 768px"
         />
       </div>

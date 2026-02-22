@@ -26,18 +26,18 @@ export const experiences: Experience[] = [
   },
   {
     company: "Bonet Utama",
-    role: "Fullstack Developer",
+    role: "Full Stack Developer",
     period: "2023 - 2024",
     location: "Indonesia",
     summary: "-",
     companyUrl: "https://bonet.co.id",
   },
   {
-    company: "Freelance",
-    role: "Fullstack Developer",
-    period: "2020 - 2023",
+    company: "Abhipraya Sumber Digital",
+    role: "Intern Full Stack Developer",
+    period: "2021 - 2022",
     location: "Indonesia",
     summary: "-",
-    companyUrl: "https://www.mrizkymdarmawan.com",
+    companyUrl: "https://companieshouse.id/abhipraya-sumber-digital",
   },
 ];

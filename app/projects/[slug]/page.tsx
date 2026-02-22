@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { ExternalLinkIcon } from "@/components/icons";
 import ProjectPreviewSlider from "@/components/project-preview-slider";
 import { getProjectBySlug, projects } from "@/lib/projects";
 
@@ -92,9 +93,10 @@ export default async function ProjectDetailPage({
               href={project.liveUrl}
               target="_blank"
               rel="noreferrer"
-              className="rounded-full bg-zinc-900 px-5 py-2 text-sm font-medium text-white hover:bg-zinc-700 dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-300"
+              className="inline-flex items-center gap-1 rounded-full bg-zinc-900 px-5 py-2 text-sm font-medium text-white hover:bg-zinc-700 dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-300"
             >
               Live Preview
+              <ExternalLinkIcon className="size-3.5" />
             </a>
           ) : null}
 
@@ -103,9 +105,10 @@ export default async function ProjectDetailPage({
               href={project.repoUrl}
               target="_blank"
               rel="noreferrer"
-              className="rounded-full border border-zinc-300 px-5 py-2 text-sm hover:bg-zinc-100 dark:border-zinc-700 dark:hover:bg-zinc-800"
+              className="inline-flex items-center gap-1 rounded-full border border-zinc-300 px-5 py-2 text-sm hover:bg-zinc-100 dark:border-zinc-700 dark:hover:bg-zinc-800"
             >
               Source Code
+              <ExternalLinkIcon className="size-3.5" />
             </a>
           ) : null}
         </section>
