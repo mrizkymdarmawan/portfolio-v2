@@ -12,6 +12,66 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    slug: "absenkeun-mobile",
+    title: "Absenkeun Mobile",
+    summary: "Mobile attendance application for Absenkeun",
+    description:
+      "Mobile application for Absenkeun, designed to streamline the workflow for employees.",
+    tech: ["IONIC", "Angular", "TypeScript"],
+    year: 2026,
+    previewImages: [
+      {
+        src: "/project-previews/absenkeun-mobile.jpg",
+        alt: "Absenkeun mobile preview",
+      },
+      {
+        src: "/project-previews/absenkeun-mobile-2.jpg",
+        alt: "Absenkeun mobile preview 2",
+      },
+      {
+        src: "/project-previews/absenkeun-mobile-3.jpg",
+        alt: "Absenkeun mobile preview 3",
+      },
+      {
+        src: "/project-previews/absenkeun-mobile-4.jpg",
+        alt: "Absenkeun mobile preview 4",
+      },
+      {
+        src: "/project-previews/absenkeun-mobile-5.jpg",
+        alt: "Absenkeun mobile preview 5",
+      },
+    ],
+    liveUrl: "https://play.google.com/store/apps/details?id=com.absenkeun.app",
+  },
+  {
+    slug: "absenkeun",
+    title: "Absenkeun",
+    summary: "Attendance management system for employees",
+    description:
+      "A attendance management system for employees, designed to streamline the workflow for employees. with gps tracking and selfie verification",
+    tech: ["Laravel", "PHP", "MySQL"],
+    year: 2026,
+    previewImages: [
+      {
+        src: "/project-previews/absenkeun-4.jpg",
+        alt: "Absenkeun preview 4",
+      },
+      {
+        src: "/project-previews/absenkeun.png",
+        alt: "Absenkeun preview",
+      },
+      {
+        src: "/project-previews/absenkeun-2.png",
+        alt: "Absenkeun preview 2",
+      },
+      {
+        src: "/project-previews/absenkeun-3.png",
+        alt: "Absenkeun preview 3",
+      },
+    ],
+    liveUrl: "https://absenkeun.id",
+  },
+  {
     slug: "famous",
     title: "Famous",
     summary: "Fleet Management System (FMS) integrated with IoT devices",
@@ -201,6 +261,7 @@ export const projects: Project[] = [
     tech: ["TypeScript", "Next.js"],
     year: 2026,
     repoUrl: "https://github.com/mrizkymdarmawan/portfolio",
+    liveUrl: "https://portfolio-v1-kiky.vercel.app",
   },
   {
     slug: "cli-calculator",

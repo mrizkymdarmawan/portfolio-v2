@@ -39,7 +39,7 @@ export default function Home() {
               href="#work"
               className="hover:text-zinc-600 dark:hover:text-zinc-300"
             >
-              Selected Work
+              Latest Projects
             </a>
             <a
               href="#contact"
@@ -163,7 +163,7 @@ export default function Home() {
         <section id="work" className="space-y-6">
           <div className="flex items-end justify-between gap-4">
             <h2 className="text-2xl font-semibold tracking-tight">
-              Selected Work
+              Latest Projects
             </h2>
             <Link
               href="/projects"
