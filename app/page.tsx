@@ -61,7 +61,7 @@ export default function Home() {
             mobile, DevOps, and IoT.
           </h1>
           <p className="max-w-2xl text-lg leading-8 text-zinc-700 dark:text-zinc-300">
-            I have 5+ years of software engineering experience since 2020,
+            I have 6+ years of software engineering experience since 2020,
             working end-to-end from product development to infrastructure. I am
             comfortable building in multiple domains, while still growing my
             applied experience in AI-focused projects.
