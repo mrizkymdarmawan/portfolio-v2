@@ -18,7 +18,7 @@ export const projects: Project[] = [
       "A simple weather app using open meteo to get weather info and forcast.",
     description:
       "A simple weather app using open meteo to get weather info and forcast.",
-    tech: ["Swift", "SwiftUI"],
+    tech: ["Swift", "Swift UI"],
     year: 2026,
     previewImages: [
       {
