@@ -12,6 +12,39 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    slug: "weatherin",
+    title: "Weatherin",
+    summary:
+      "A simple weather app using open meteo to get weather info and forcast.",
+    description:
+      "A simple weather app using open meteo to get weather info and forcast.",
+    tech: ["Swift", "SwiftUI"],
+    year: 2026,
+    previewImages: [
+      {
+        src: "/project-previews/weatherin-4.png",
+        alt: "Weatherin mobile preview",
+      },
+      {
+        src: "/project-previews/weatherin-5.png",
+        alt: "Weatherin mobile preview 2",
+      },
+      {
+        src: "/project-previews/weatherin-3.png",
+        alt: "Weatherin mobile preview 3",
+      },
+      {
+        src: "/project-previews/weatherin-2.png",
+        alt: "Weatherin mobile preview 4",
+      },
+      {
+        src: "/project-previews/weatherin.png",
+        alt: "Weatherin mobile preview 5",
+      },
+    ],
+    liveUrl: "https://testflight.apple.com/join/qY9zD46t",
+  },
+  {
     slug: "absenkeun-mobile",
     title: "Absenkeun Mobile",
     summary: "Mobile attendance application for Absenkeun",
